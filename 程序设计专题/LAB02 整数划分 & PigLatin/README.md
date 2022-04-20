@@ -36,11 +36,11 @@ Pig Latin是按照如下简单规则转换每个英文单词的一种自发明�
 
 **【例】**
 
-输入：
+**输入：**
 
 This is an example of Pig Latin. As you can see, it's silly, but lots of fun for children.
 
-输出：
+**输出：**
 
 is-Thay is-way an-way example-way of-way ig-Pay atin-Lay. As-way ou-yay an-cay ee-say, it-way's illy-say, ut-bay ots-lay of-way un-fay or-fay ildren-chay.
 
