@@ -1,4 +1,5 @@
 **Project得分**：18/20
+
 **助教评语**：
 1. Typo:  Chapter 1 " In the project, we are to implerment operations on these three trees... "
 2. Not making their algorithm easier to understand than a simple program. For example, the pseudo-code of BST is not self-contained. 'Connect' operation is used without definition.  (-1)
