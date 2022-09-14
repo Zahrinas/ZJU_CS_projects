@@ -1,0 +1,5 @@
+// sample
+Yes // Huffman编码
+Yes // 并列分支
+No // 长度错误
+No // 前缀错误

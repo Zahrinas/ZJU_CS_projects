@@ -1,0 +1,4 @@
+Yes // Huffman编码
+Yes // 01反
+Yes // 两点对换
+Yes // 和第2组重合
