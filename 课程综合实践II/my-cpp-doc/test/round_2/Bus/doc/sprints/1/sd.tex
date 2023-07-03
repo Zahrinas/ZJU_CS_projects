@@ -1,0 +1,39 @@
+﻿\documentclass{article}
+\usepackage{pgf-umlsd}
+\usepackage{changepage}
+\usepackage{pdflscape}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{landscape}
+\begin{adjustwidth}{-2cm}{-2cm}
+\textbf{OnBtnQueryClicked}\\
+\begin{sequencediagram}
+\newthread{MW}{MainWindow}
+\newinst{MWCS}{MainWindowCommandSink}
+\newinst{MWPS}{MainWindowPropertySink}
+\newinst{BL}{BusLabel}
+\newinst{QC}{QueryCommand}
+\newinst{VM}{BusViewModel}
+\newinst{VMS}{BusViewModelSink}
+\newinst{DM}{BusDataModel}
+
+\begin{call}{MW}{Exec}{QC}{}
+ \begin{call}{QC}{Query}{VM}{}
+  \begin{call}{VM}{Query}{DM}{}
+   \begin{call}{DM}{OnPropertyChanged}{VMS}{}
+    \begin{call}{VMS}{OnPropertyChanged}{MWPS}{}
+     \begin{call}{MWPS}{Update}{BL}{}\end{call}
+    \end{call}
+   \end{call}
+  \end{call}
+ \end{call}
+ \begin{call}{QC}{Fire\_OnCommandComplete}{VM}{}
+  \begin{call}{VM}{OnCommandComplete}{MWCS}{}\end{call}
+ \end{call}
+\end{call}
+
+\end{sequencediagram}
+\end{adjustwidth}
+\end{landscape}
+\end{document}

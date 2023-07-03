@@ -35,4 +35,4 @@ signed main(signed argc,char** argv,char** env){
 	scanf("%d",&year);
 	print();
 	exit(0);
-}//Zaric  
+}//Zaric

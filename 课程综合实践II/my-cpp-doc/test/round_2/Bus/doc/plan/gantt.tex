@@ -1,0 +1,28 @@
+﻿\documentclass{article}
+\usepackage{pgfgantt}
+%xeCJK
+\usepackage[BoldFont,SlantFont,CJKchecksingle]{xeCJK}
+\setCJKmainfont[BoldFont=SimHei,SlantedFont=KaiTi]{SimSun}
+
+\begin{document}
+\def\pgfcalendarmonthzh#1{%
+\ifcase#1XX\or 一月\or 二月\or 三月\or 四月\or 五月\or 六月\or 七月\or 八月\or 九月\or 十月\or 十一月\or 十二月\fi%
+}
+\ganttset{%
+calendar week text={%
+第 \currentweek 周%
+}%
+}
+\begin{ganttchart}[
+vgrid,
+inline,
+time slot format=isodate,
+]{2018-07-02}{2018-07-31}
+\gantttitlecalendar{year, month=zh, day, week} \\
+\ganttbar[name=task1]{显示公交地图}{2018-07-02}{2018-07-09} \\
+\ganttbar[name=task2]{显示公交路线}{2018-07-09}{2018-07-16} \\
+\ganttbar[name=task3]{规划站点间公交路线}{2018-07-16}{2018-07-23} 
+\ganttlink{task1}{task2}
+\ganttlink{task2}{task3}
+\end{ganttchart}
+\end{document}

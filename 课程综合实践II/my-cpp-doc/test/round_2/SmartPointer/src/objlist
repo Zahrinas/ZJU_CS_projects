@@ -1,0 +1,1 @@
+SRCOBJS = src/String.o src/StringRep.o src/UCObject.o

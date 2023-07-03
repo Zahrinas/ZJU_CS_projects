@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/myCppDoc">
+        <file>info.png</file>
+        <file>myCppDoc.ico</file>
+        <file>myCppDoc.rc</file>
+        <file>open.png</file>
+        <file>save.png</file>
+    </qresource>
+</RCC>

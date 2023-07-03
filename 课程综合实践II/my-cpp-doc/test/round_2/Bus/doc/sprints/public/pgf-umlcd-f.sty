@@ -1,0 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fix bugs for pgf-umlcd.sty
+%  Xin YUAN, 2018
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesPackage{pgf-umlcd-f}[2018/7/28 fix pgf-umlcd]
+
+\RequirePackage{pgf-umlcd}
+
+%fix
+\renewenvironment*{classAndInterfaceCommon}[3]
+{
+\def\umlcdClassName{#2}%
+\def\umlcdClassPos{#3}
+\def\umlcdClassAttributes{}%
+\def\umlcdClassOperations{}%
+\def\umlcdClassAbstractClass{}%
+\def\umlcdClassInterface{}%
+\setcounter{umlcdClassAttributesNum}{0}%
+\setcounter{umlcdClassOperationsNum}{0}%
+\setcounter{umlcdClassAbstractClassNum}{0}%
+\setcounter{umlcdClassInterfaceNum}{0}%
+\tikzstyle{this umlcd style}=[umlcd style class, rectangle split
+  parts=\umlcdSplitPart, #1]
+}%
+{
+%% connections
+\begin{pgfonlayer}{connectionlayers}
+\ifnum\c@umlcdClassAbstractClassNum>0
+%**************************************
+\foreach \c in \umlcdClassAbstractClass{
+%**************************************
+  \draw [umlcd style inherit line] (\c) -- (\umlcdClassName);
+}
+\fi
+
+\ifnum\c@umlcdClassInterfaceNum>0
+%**************************************
+\foreach \c in \umlcdClassInterface{
+%**************************************
+  \draw [umlcd style implement line] (\c) -- (\umlcdClassName);
+}
+\fi
+\end{pgfonlayer}
+
+%% add to fit
+\let\umlcdPackageFitOld\umlcdPackageFit
+\protected@xdef\umlcdPackageFit{\umlcdPackageFitOld (\umlcdClassName)}
+}
