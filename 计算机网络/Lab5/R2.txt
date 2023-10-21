@@ -1,0 +1,26 @@
+!
+interface Loopback0
+ ip address 10.0.20.1 255.255.255.252
+!
+interface FastEthernet0/0
+ ip address 10.0.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Serial0/0
+ ip address 10.0.123.242 255.255.255.252
+ clock rate 2000000
+!
+interface FastEthernet1/0
+ ip address 10.0.123.249 255.255.255.248
+ duplex auto
+ speed auto
+!
+router ospf 46
+ log-adjacency-changes
+ network 10.0.0.0 0.0.255.255 area 0
+!
+router rip
+ version 2
+ network 10.0.0.0
+!
