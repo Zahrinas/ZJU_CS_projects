@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="667001fs"></ZoomEndTime>
+      <Cursor1Time time="410000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="180"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/sim_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/clk_count" type="array">
+      <obj_property name="ElementShortName">clk_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/inst_count" type="array">
+      <obj_property name="ElementShortName">inst_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/hit_count" type="array">
+      <obj_property name="ElementShortName">hit_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hit_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/word_count" type="array">
+      <obj_property name="ElementShortName">word_count[1:0]</obj_property>
+      <obj_property name="ObjectShortName">word_count[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/next_word_count" type="array">
+      <obj_property name="ElementShortName">next_word_count[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_word_count[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/en_r" type="logic">
+      <obj_property name="ElementShortName">en_r</obj_property>
+      <obj_property name="ObjectShortName">en_r</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/en_w" type="logic">
+      <obj_property name="ElementShortName">en_w</obj_property>
+      <obj_property name="ObjectShortName">en_w</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/u_b_h_w" type="array">
+      <obj_property name="ElementShortName">u_b_h_w[2:0]</obj_property>
+      <obj_property name="ObjectShortName">u_b_h_w[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/addr_rw" type="array">
+      <obj_property name="ElementShortName">addr_rw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_rw[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/data_w" type="array">
+      <obj_property name="ElementShortName">data_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_w[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/data_r" type="array">
+      <obj_property name="ElementShortName">data_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_cs_o" type="logic">
+      <obj_property name="ElementShortName">mem_cs_o</obj_property>
+      <obj_property name="ObjectShortName">mem_cs_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_we_o" type="logic">
+      <obj_property name="ElementShortName">mem_we_o</obj_property>
+      <obj_property name="ObjectShortName">mem_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_addr_o" type="array">
+      <obj_property name="ElementShortName">mem_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_data_o" type="array">
+      <obj_property name="ElementShortName">mem_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_data_i" type="array">
+      <obj_property name="ElementShortName">mem_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/mem_ack_i" type="logic">
+      <obj_property name="ElementShortName">mem_ack_i</obj_property>
+      <obj_property name="ObjectShortName">mem_ack_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_load" type="logic">
+      <obj_property name="ElementShortName">cache_load</obj_property>
+      <obj_property name="ObjectShortName">cache_load</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_store" type="logic">
+      <obj_property name="ElementShortName">cache_store</obj_property>
+      <obj_property name="ObjectShortName">cache_store</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_edit" type="logic">
+      <obj_property name="ElementShortName">cache_edit</obj_property>
+      <obj_property name="ObjectShortName">cache_edit</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_u_b_h_w" type="array">
+      <obj_property name="ElementShortName">cache_u_b_h_w[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_u_b_h_w[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_addr" type="array">
+      <obj_property name="ElementShortName">cache_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_addr[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_din" type="array">
+      <obj_property name="ElementShortName">cache_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_din[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_dout" type="array">
+      <obj_property name="ElementShortName">cache_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_dout[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_hit" type="logic">
+      <obj_property name="ElementShortName">cache_hit</obj_property>
+      <obj_property name="ObjectShortName">cache_hit</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_valid" type="logic">
+      <obj_property name="ElementShortName">cache_valid</obj_property>
+      <obj_property name="ObjectShortName">cache_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_dirty" type="logic">
+      <obj_property name="ElementShortName">cache_dirty</obj_property>
+      <obj_property name="ObjectShortName">cache_dirty</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_top/uut/CMU/cache_tag" type="array">
+      <obj_property name="ElementShortName">cache_tag[22:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_tag[22:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>
