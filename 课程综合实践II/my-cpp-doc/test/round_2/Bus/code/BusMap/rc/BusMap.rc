@@ -1,4 +1,0 @@
-
-#include "resource.h"
-
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BusMap.ico"

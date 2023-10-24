@@ -12,6 +12,6 @@
 
 实际上整体做的（我觉得是）比较烂……我只能说是把分配下来的工作都做了，别的也没法归我管。
 
-项目主目录：[github.com/Zahrinas/SE_ZheDai](https://github.com/Zahrinas/SE_ZheDai)，可以直接点进去。鉴于这是我自己名下的repo，就不复制一遍了。
+项目主目录：[github.com/Zahrinas/SE_ZheDai](https://github.com/Zahrinas/SE_ZheDai)。鉴于这就是我自己的repo，所以就不复制粘贴了。
 
 *环境：（前端）微信小程序开发工具；（后端）JavaSE 20, NetBeans IDE 17, NB Spring Boot 3.1 for NB 12.0, Maven 3.8.7, MySQL Community Server 8.0.28*

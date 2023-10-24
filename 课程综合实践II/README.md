@@ -14,6 +14,8 @@
 
 虽然我不太想做前端，但是鉴于只有我对Qt比较熟，还是我做的Qt相关部分（也就是存读等功能和图形界面，除画布外）。
 
-项目主目录：[github.com/lzcxt/my-cpp-doc](https://github.com/lzcxt/my-cpp-doc)，可以直接点进去；当然我自己在这里也放了一个备份。
+项目主目录：[github.com/lzcxt/my-cpp-doc](https://github.com/lzcxt/my-cpp-doc)，可以直接点进去。
+
+当然我自己也fork了一个备份，并且归档：[github.com/Zahrinas/my-cpp-doc](https://github.com/Zahrinas/my-cpp-doc)。所以就不复制粘贴了。
 
 *环境：VS2017, Qt5.12.12*
