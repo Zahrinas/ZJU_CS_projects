@@ -16,6 +16,6 @@
 
 我中间直接采用LLVM IR的SSA形式，目标汇编语言是RISCV64，因此既可以生成IR扔给LLVM也可以直接编译成（效率非常低的）汇编从而交给汇编器。
 
-项目主目录：[github.com/Zahrinas/SimpleCCompiler](https://github.com/Zahrinas/SimpleCCompile)，可以直接点进去。
+项目主目录：[github.com/Zahrinas/SimpleCCompiler](https://github.com/Zahrinas/SimpleCCompiler)，可以直接点进去。
 
 *环境：VS2017*
